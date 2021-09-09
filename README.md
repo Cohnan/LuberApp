@@ -8,3 +8,5 @@ Autores:
 
  - Sebastian Camilo Puerto
  - Katherine Casanova Urueña
+
+Más detalles: documento [README.pdf](https://github.com/Cohnan/MisionTICReto5/blob/main/README.pdf)
