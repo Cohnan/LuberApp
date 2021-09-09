@@ -1,10 +1,10 @@
 -- Vehiculos
-INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('klm 565', 'chevrolet', 'spark', 2015, 5, 'amarillo', 120000);
-INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('lcs 364', 'chevrolet', 'spark', 2016, 5, 'blanco', 125000);
-INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('kgh 211', 'kia', 'picanto', 2015, 5, 'amarillo', 80000);
-INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('pet 363', 'kia', 'rio', 2019, 5, 'blanco', 150000);
-INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('cul 073', 'renault', 'duster', 2006, 5, 'blanco', 220000);
-INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('pel 456', 'renault', 'duster', 2015, 5, 'blanco', 130000);
+INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('KLM 565', 'Chevrolet', 'spark', 2015, 5, 'amarillo', 120000);
+INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('LCS 364', 'Chevrolet', 'spark', 2016, 5, 'blanco', 125000);
+INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('KGH 211', 'Kia', 'picanto', 2015, 5, 'amarillo', 80000);
+INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('PET 363', 'Kia', 'rio', 2019, 5, 'blanco', 150000);
+INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('CUL 073', 'Renault', 'duster', 2006, 5, 'blanco', 220000);
+INSERT INTO vehiculo(veh_placa, veh_marca, veh_modelo, veh_anio, veh_capacidad, veh_color, veh_kilometros) VALUES('PEL 456', 'Renault', 'duster', 2015, 5, 'blanco', 130000);
 
 -- Usuarios
 INSERT INTO usuario(usu_cc, usu_nombre, usu_apellido, usu_email) VALUES(454671556, 'Camilo', 'Garcia', 'cgarcia@mail.com');
