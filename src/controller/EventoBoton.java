@@ -13,7 +13,7 @@ import view.Menu;
  * correspondientes haciendo uso del DAO.
  * @author Sebastian Puerto & Katherine Casanova
  */
-public class EventoClick  implements ActionListener {
+public class EventoBoton  implements ActionListener {
     
     // Objeto en donde se encuentran los objetos que estan escuchando las acciones
     private final Menu framePrincipal; 
@@ -22,7 +22,7 @@ public class EventoClick  implements ActionListener {
     // que establezca una unica conexion con la base de datos.
     private final UsuarioDAO usuarioDAO;
     
-    public EventoClick (Menu framePrincipal) {
+    public EventoBoton (Menu framePrincipal) {
         this.framePrincipal = framePrincipal;
         usuarioDAO = new UsuarioDAO();
     }

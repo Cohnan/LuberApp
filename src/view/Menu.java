@@ -3,6 +3,11 @@ package view;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 
+// Uses:
+// controller.DatosIniciales
+// controller.EventoMouse
+// controller.EventoBoton
+
 
 /**
   * JFrame creado con ayuda de la herramienta de Diseño de Jframes
@@ -166,7 +171,7 @@ public class Menu extends javax.swing.JFrame {
         
         // Listener para los botones: basta uno solo para todos los botones
         // pues no es necesario establecer multiples conexiones a la base de datos
-        controller.EventoClick eventoClickBotones = new controller.EventoClick(this);
+        controller.EventoBoton eventoClickBotones = new controller.EventoBoton(this);
         
         btnListar.setText("Listar");
         btnListar.setName("btnListar");
