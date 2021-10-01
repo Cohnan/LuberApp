@@ -10,10 +10,10 @@ import view.Menu;
 /**
  * Controlador para botones del CRUD de la base de datos. En el momento, escucha
  * su activacion en la GUI y realiza la consecuente ejecucion de los queries 
- * correspondientes haciendo uso del DAO.
+ * correspondientes haciendo uso del DAO. I.e. CONECTA VISTA CON capa de DATOS.
  * @author Sebastian Puerto & Katherine Casanova
  */
-public class EventoBoton  implements ActionListener {
+public class EventoBotonCRUD  implements ActionListener {
     
     // Objeto en donde se encuentran los objetos que estan escuchando las acciones
     private final Menu framePrincipal; 
@@ -22,7 +22,7 @@ public class EventoBoton  implements ActionListener {
     // que establezca una unica conexion con la base de datos.
     private final UsuarioDAO usuarioDAO;
     
-    public EventoBoton (Menu framePrincipal) {
+    public EventoBotonCRUD (Menu framePrincipal) {
         this.framePrincipal = framePrincipal;
         usuarioDAO = new UsuarioDAO();
     }
