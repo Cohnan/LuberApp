@@ -5,7 +5,7 @@ import javax.swing.table.DefaultTableModel;
 
 // Uses:
 // controller.DatosIniciales
-// controller.EventoMouse
+// EventoTabla
 // controller.EventoBotonCRUD
 
 
@@ -127,7 +127,7 @@ public class Menu extends javax.swing.JFrame {
         this.setTblResults(datosI.getUsers());
         
         // Hacer que la tabla escuche a los eventos del mouse para seleccionar filas
-        controller.EventoMouse eventoMouseTabla = new controller.EventoMouse(this);
+        EventoTabla eventoMouseTabla = new EventoTabla(this);
         jTable1.addMouseListener(eventoMouseTabla);
         
         // Label Devs
