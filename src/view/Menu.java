@@ -3,11 +3,6 @@ package view;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 
-import controller.DatosIniciales;
-import controller.EventoClick;
-import controller.EventoMouse;
-
-import model.UsuarioModel;
 
 /**
   * JFrame creado con ayuda de la herramienta de Diseño de Jframes
@@ -123,11 +118,11 @@ public class Menu extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
         
         // Cargar datos iniciales de la DB a la tabla
-        DatosIniciales datosI = new DatosIniciales();
+        controller.DatosIniciales datosI = new controller.DatosIniciales();
         this.setTblResults(datosI.getUsers());
         
         // Hacer que la tabla escuche a los eventos del mouse para seleccionar filas
-        EventoMouse eventoMouseTabla = new EventoMouse(this);
+        controller.EventoMouse eventoMouseTabla = new controller.EventoMouse(this);
         jTable1.addMouseListener(eventoMouseTabla);
         
         // Label Devs
@@ -171,7 +166,7 @@ public class Menu extends javax.swing.JFrame {
         
         // Listener para los botones: basta uno solo para todos los botones
         // pues no es necesario establecer multiples conexiones a la base de datos
-        EventoClick eventoClickBotones = new EventoClick(this);
+        controller.EventoClick eventoClickBotones = new controller.EventoClick(this);
         
         btnListar.setText("Listar");
         btnListar.setName("btnListar");
@@ -353,7 +348,7 @@ public class Menu extends javax.swing.JFrame {
      * Usado tanto en la inicializacion, como por el controlador para la actualizacion.
      * @param listoUsuarios
      */
-    public void setTblResults(ArrayList<UsuarioModel> listaUsuarios) {
+    public void setTblResults(ArrayList<model.UsuarioModel> listaUsuarios) {
         System.out.println("Entro a modificar tabla");
         
         String[] headers = {"CC", "Nombre", "Apellido", "e-mail"};
@@ -368,7 +363,8 @@ public class Menu extends javax.swing.JFrame {
         }
     }
 
-    // Metodos de encapsulamiento:
+    // Metodos de encapsulamiento: para determinar en el controlador la fuente 
+    // de los eventos
     /**
      * Getter para el boton Listar, que permite determinar la fuente de los eventos
      * en el controlador
